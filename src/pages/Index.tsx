@@ -7,7 +7,6 @@ import LeadCapture from "@/components/landing/LeadCapture";
 import Events from "@/components/landing/Events";
 import Footer from "@/components/landing/Footer";
 import WhatsAppWidget from "@/components/landing/WhatsAppWidget";
-import ExitIntent from "@/components/landing/ExitIntent";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -48,7 +47,6 @@ const Index = () => {
       <Events />
       <Footer />
       <WhatsAppWidget />
-      <ExitIntent />
     </main>
   );
 };

@@ -31,7 +31,7 @@ const events = [
 
 const Events = () => {
   return (
-    <section id="evenements" className="py-20 lg:py-28 bg-secondary/40">
+    <section id="evenements" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto container-px">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <div className="max-w-2xl">
