@@ -41,7 +41,7 @@ const LeadCapture = () => {
   return (
     <section id="lead" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto container-px">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center bg-secondary/50 rounded-3xl p-8 lg:p-14 border border-border">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center bg-gradient-to-br from-secondary/60 to-background rounded-3xl p-8 lg:p-14 border border-border/60 shadow-card">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-xs uppercase tracking-wider">
               <Download className="w-3.5 h-3.5" /> Lead Magnet

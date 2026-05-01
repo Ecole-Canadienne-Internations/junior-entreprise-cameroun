@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import partnerPrepa from "@/assets/partner-prepavogt.png";
 import partnerJE from "@/assets/partner-junior-entreprises.png";
 import partnerGefi from "@/assets/partner-gefi.png";
+import partnerCanadian from "@/assets/partner-canadian-school.png";
 
 const useCountUp = (target: number, duration = 1800) => {
   const [val, setVal] = useState(0);
@@ -50,6 +51,7 @@ const partners = [
   { src: partnerPrepa, alt: "Prépa VOGT" },
   { src: partnerJE, alt: "Junior-Entreprises" },
   { src: partnerGefi, alt: "GEFI" },
+  { src: partnerCanadian, alt: "École Canadienne Inter-Nations" },
 ];
 
 const Stats = () => {
@@ -73,15 +75,19 @@ const Stats = () => {
           <p className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-10">
             Ils nous font confiance
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-12 lg:gap-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 lg:gap-6 max-w-5xl mx-auto">
             {partners.map((p) => (
-              <img
+              <div
                 key={p.alt}
-                src={p.src}
-                alt={p.alt}
-                loading="lazy"
-                className="h-16 lg:h-20 w-auto object-contain transition-smooth hover:scale-105"
-              />
+                className="bg-background rounded-2xl border border-border/60 shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth p-6 grid place-items-center min-h-[130px]"
+              >
+                <img
+                  src={p.src}
+                  alt={p.alt}
+                  loading="lazy"
+                  className="max-h-20 w-auto object-contain"
+                />
+              </div>
             ))}
           </div>
         </div>
