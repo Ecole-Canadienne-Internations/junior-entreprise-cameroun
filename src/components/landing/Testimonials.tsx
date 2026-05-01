@@ -29,9 +29,9 @@ const Testimonials = () => {
   const prev = () => setI((i - 1 + items.length) % items.length);
 
   return (
-    <section className="py-20 lg:py-28 bg-anthracite text-primary-foreground relative overflow-hidden">
-      <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
-      <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+    <section className="py-20 lg:py-28 bg-background text-anthracite relative overflow-hidden">
+      <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto container-px relative">
         <div className="max-w-4xl mx-auto text-center">
@@ -44,8 +44,8 @@ const Testimonials = () => {
               {t.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
             </div>
             <div className="text-left">
-              <div className="font-semibold">{t.name}</div>
-              <div className="text-sm text-primary-foreground/70">{t.role}</div>
+              <div className="font-semibold text-anthracite">{t.name}</div>
+              <div className="text-sm text-muted-foreground">{t.role}</div>
             </div>
           </div>
           <div className="mt-6 flex items-center justify-center gap-1 text-primary">
@@ -58,7 +58,7 @@ const Testimonials = () => {
             <button
               aria-label="Précédent"
               onClick={prev}
-              className="w-11 h-11 rounded-full border border-primary-foreground/20 hover:bg-primary hover:border-primary grid place-items-center transition-smooth"
+              className="w-11 h-11 rounded-full border border-border hover:bg-primary hover:text-primary-foreground hover:border-primary grid place-items-center transition-smooth"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
@@ -68,14 +68,14 @@ const Testimonials = () => {
                   key={k}
                   aria-label={`Aller au témoignage ${k + 1}`}
                   onClick={() => setI(k)}
-                  className={`h-2 rounded-full transition-smooth ${k === i ? "bg-primary w-8" : "bg-primary-foreground/30 w-2"}`}
+                  className={`h-2 rounded-full transition-smooth ${k === i ? "bg-primary w-8" : "bg-border w-2"}`}
                 />
               ))}
             </div>
             <button
               aria-label="Suivant"
               onClick={next}
-              className="w-11 h-11 rounded-full border border-primary-foreground/20 hover:bg-primary hover:border-primary grid place-items-center transition-smooth"
+              className="w-11 h-11 rounded-full border border-border hover:bg-primary hover:text-primary-foreground hover:border-primary grid place-items-center transition-smooth"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
