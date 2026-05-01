@@ -1,11 +1,15 @@
 import { Calendar, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import eventNetworking from "@/assets/event-networking.jpg";
+import eventWorkshop from "@/assets/event-workshop.jpg";
+import eventConference from "@/assets/event-conference.jpg";
 
 const events = [
   {
     cat: "Networking",
     color: "bg-primary/10 text-primary",
+    image: eventNetworking,
     title: "Afterwork Entrepreneurs × Étudiants",
     date: "15 Mai 2026",
     place: "Yaoundé — Hilton",
@@ -14,6 +18,7 @@ const events = [
   {
     cat: "Workshop",
     color: "bg-anthracite/10 text-anthracite",
+    image: eventWorkshop,
     title: "Atelier Business Plan en 48h",
     date: "22 Mai 2026",
     place: "Douala — IUC",
@@ -22,6 +27,7 @@ const events = [
   {
     cat: "Conférence",
     color: "bg-primary/10 text-primary",
+    image: eventConference,
     title: "Forum Innovation Cameroun 2026",
     date: "10 Juin 2026",
     place: "Yaoundé — Palais des Congrès",
@@ -47,12 +53,17 @@ const Events = () => {
           {events.map((e) => (
             <article
               key={e.title}
-              className="group bg-background rounded-2xl overflow-hidden border border-border shadow-soft hover:shadow-elegant hover:-translate-y-1 transition-smooth flex flex-col"
+              className="group bg-background rounded-2xl overflow-hidden border border-border/60 shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth flex flex-col"
             >
-              <div className="aspect-[16/9] bg-gradient-primary relative overflow-hidden">
-                <div className="absolute inset-0 grid place-items-center">
-                  <Calendar className="w-16 h-16 text-primary-foreground/40" />
-                </div>
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <img
+                  src={e.image}
+                  alt={e.title}
+                  loading="lazy"
+                  width={1024}
+                  height={576}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
+                />
                 <Badge className={`absolute top-4 left-4 ${e.color} border-0 font-semibold`}>{e.cat}</Badge>
               </div>
               <div className="p-6 flex-1 flex flex-col">
