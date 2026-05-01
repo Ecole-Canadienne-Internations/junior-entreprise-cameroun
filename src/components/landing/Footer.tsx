@@ -65,6 +65,18 @@ const Footer = () => {
             <a href="#" className="hover:text-primary transition-smooth">Confidentialité</a>
           </div>
         </div>
+
+        <div className="mt-6 text-center text-xs text-primary-foreground/50">
+          Built by{" "}
+          <a
+            href="https://delmarwebstudios.qzz.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-primary hover:underline"
+          >
+            Delmar Web Studios
+          </a>
+        </div>
       </div>
     </footer>
   );
