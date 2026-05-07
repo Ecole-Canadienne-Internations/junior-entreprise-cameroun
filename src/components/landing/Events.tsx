@@ -1,7 +1,7 @@
 import { Calendar, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import eventNetworking from "@/assets/event-networking.jpg";
+import eventNetworking from "@/assets/event-meeting.jpg";
 import eventWorkshop from "@/assets/event-workshop.jpg";
 import eventConference from "@/assets/event-conference.jpg";
 
