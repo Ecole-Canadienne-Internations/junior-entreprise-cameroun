@@ -8,6 +8,14 @@ import schoolIconic from "@/assets/partners/school-iconic.png";
 import schoolIsta from "@/assets/partners/school-ista.png";
 import startupAyila from "@/assets/partners/startup-ayila.jpg";
 import startupIyc from "@/assets/partners/startup-iyc.png";
+import globalBdsu from "@/assets/partners/global-bdsu.png";
+import globalJcnetwork from "@/assets/partners/global-jcnetwork.png";
+import globalJetTunisia from "@/assets/partners/global-jet-tunisia.png";
+import globalCgje from "@/assets/partners/global-cgje.png";
+import globalCjem from "@/assets/partners/global-cjem.jpg";
+import globalBrasil from "@/assets/partners/global-brasil.png";
+import globalJeUsa from "@/assets/partners/global-je-usa.jpg";
+import globalRaices from "@/assets/partners/global-raices.jpg";
 
 const institutions = [
   { src: instRepublic, alt: "République du Cameroun" },
@@ -24,6 +32,16 @@ const schools = [
 const startups = [
   { src: startupAyila, alt: "Ayila'" },
   { src: startupIyc, alt: "International Youth Conference" },
+];
+const globalMembers = [
+  { src: globalBdsu, alt: "BDSU — Allemagne" },
+  { src: globalJcnetwork, alt: "JCNetwork" },
+  { src: globalJetTunisia, alt: "Junior Enterprises of Tunisia" },
+  { src: globalCgje, alt: "Confédération Gabonaise des Junior Entreprises" },
+  { src: globalCjem, alt: "CJEM" },
+  { src: globalBrasil, alt: "Brasil Júnior" },
+  { src: globalJeUsa, alt: "Junior Enterprise USA" },
+  { src: globalRaices, alt: "RAÍCES — Argentine" },
 ];
 
 const Logo = ({ src, alt, size = "md" }: { src: string; alt: string; size?: "sm" | "md" | "lg" }) => {
@@ -73,6 +91,7 @@ const Partners = () => {
           <Tier label="Institutions" items={institutions} size="lg" />
           <Tier label="Écoles partenaires" items={schools} size="md" />
           <Tier label="Startups" items={startups} size="sm" />
+          <Tier label="Junior Enterprise Global — Membres" items={globalMembers} size="md" />
         </div>
       </div>
     </section>
