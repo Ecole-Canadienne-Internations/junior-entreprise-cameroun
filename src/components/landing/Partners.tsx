@@ -33,6 +33,16 @@ const startups = [
   { src: startupAyila, alt: "Ayila'" },
   { src: startupIyc, alt: "International Youth Conference" },
 ];
+const globalMembers = [
+  { src: globalBdsu, alt: "BDSU — Allemagne" },
+  { src: globalJcnetwork, alt: "JCNetwork" },
+  { src: globalJetTunisia, alt: "Junior Enterprises of Tunisia" },
+  { src: globalCgje, alt: "Confédération Gabonaise des Junior Entreprises" },
+  { src: globalCjem, alt: "CJEM" },
+  { src: globalBrasil, alt: "Brasil Júnior" },
+  { src: globalJeUsa, alt: "Junior Enterprise USA" },
+  { src: globalRaices, alt: "RAÍCES — Argentine" },
+];
 
 const Logo = ({ src, alt, size = "md" }: { src: string; alt: string; size?: "sm" | "md" | "lg" }) => {
   const h = size === "lg" ? "h-24 lg:h-28" : size === "md" ? "h-20 lg:h-24" : "h-16 lg:h-20";
