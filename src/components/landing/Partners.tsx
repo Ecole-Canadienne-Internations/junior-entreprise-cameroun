@@ -8,6 +8,14 @@ import schoolIconic from "@/assets/partners/school-iconic.png";
 import schoolIsta from "@/assets/partners/school-ista.png";
 import startupAyila from "@/assets/partners/startup-ayila.jpg";
 import startupIyc from "@/assets/partners/startup-iyc.png";
+import globalBdsu from "@/assets/partners/global-bdsu.png";
+import globalJcnetwork from "@/assets/partners/global-jcnetwork.png";
+import globalJetTunisia from "@/assets/partners/global-jet-tunisia.png";
+import globalCgje from "@/assets/partners/global-cgje.png";
+import globalCjem from "@/assets/partners/global-cjem.jpg";
+import globalBrasil from "@/assets/partners/global-brasil.png";
+import globalJeUsa from "@/assets/partners/global-je-usa.jpg";
+import globalRaices from "@/assets/partners/global-raices.jpg";
 
 const institutions = [
   { src: instRepublic, alt: "République du Cameroun" },
