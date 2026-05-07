@@ -1,7 +1,12 @@
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
+import Partners from "@/components/landing/Partners";
+import About from "@/components/landing/About";
 import Stats from "@/components/landing/Stats";
+import Process from "@/components/landing/Process";
 import Services from "@/components/landing/Services";
+import Authorities from "@/components/landing/Authorities";
+import Timeline from "@/components/landing/Timeline";
 import Testimonials from "@/components/landing/Testimonials";
 import LeadCapture from "@/components/landing/LeadCapture";
 import Events from "@/components/landing/Events";
@@ -40,8 +45,13 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Header />
       <Hero />
+      <Partners />
+      <About />
       <Stats />
+      <Process />
       <Services />
+      <Authorities />
+      <Timeline />
       <Testimonials />
       <LeadCapture />
       <Events />
