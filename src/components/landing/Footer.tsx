@@ -44,11 +44,11 @@ const Footer = () => {
             <ul className="space-y-3 text-primary-foreground/70 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                Siège : Yaoundé, Quartier Bastos
+                Carrefour Mvogt, Yaoundé (BP 5970)
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary shrink-0" />
-                +237 6 XX XX XX XX
+                +237 6 79 74 76 11
               </li>
               <li className="flex items-center gap-3 break-all">
                 <Mail className="w-4 h-4 text-primary shrink-0" />
