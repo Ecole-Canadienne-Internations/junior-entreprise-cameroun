@@ -1,84 +1,48 @@
-import { useState } from "react";
-import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
-
-const items = [
-  {
-    quote:
-      "Travailler avec la Junior Entreprise, c'est l'assurance d'un regard neuf couplé à une rigueur académique.",
-    name: "Dr. Ngono Mbarga",
-    role: "Recteur, Université de Yaoundé",
-  },
-  {
-    quote:
-      "Une équipe agile, des livrables professionnels et un excellent rapport qualité/prix pour notre stratégie digitale.",
-    name: "Samuel Eyenga",
-    role: "CEO, Afrik Innov SARL",
-  },
-  {
-    quote:
-      "L'étude de marché livrée nous a permis de pivoter intelligemment. Bravo aux consultants juniors !",
-    name: "Mireille Atangana",
-    role: "Fondatrice, BioFarms Cameroun",
-  },
-];
+import { Quote } from "lucide-react";
 
 const Testimonials = () => {
-  const [i, setI] = useState(0);
-  const t = items[i];
-  const next = () => setI((i + 1) % items.length);
-  const prev = () => setI((i - 1 + items.length) % items.length);
-
   return (
     <section className="py-20 lg:py-28 bg-background text-anthracite relative overflow-hidden">
       <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto container-px relative">
-        <div className="max-w-4xl mx-auto text-center">
-          <Quote className="w-14 h-14 text-primary mx-auto mb-8" />
-          <blockquote className="font-display text-2xl lg:text-4xl font-medium leading-snug text-balance min-h-[160px]">
-            « {t.quote} »
-          </blockquote>
-          <div className="mt-10 flex items-center justify-center gap-4">
-            <div className="w-14 h-14 rounded-full bg-gradient-primary grid place-items-center font-display font-bold">
-              {t.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
-            </div>
-            <div className="text-left">
-              <div className="font-semibold text-anthracite">{t.name}</div>
-              <div className="text-sm text-muted-foreground">{t.role}</div>
-            </div>
-          </div>
-          <div className="mt-6 flex items-center justify-center gap-1 text-primary">
-            {Array.from({ length: 5 }).map((_, k) => (
-              <Star key={k} className="w-5 h-5 fill-primary" />
-            ))}
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="text-sm font-semibold text-primary uppercase tracking-wider">Mot du Directeur</div>
+            <h2 className="mt-3 font-display text-3xl lg:text-4xl font-bold text-anthracite text-balance">
+              Le mot du Directeur Général de <span className="text-primary">PI — Prépas Internationales</span>.
+            </h2>
           </div>
 
-          <div className="mt-10 flex items-center justify-center gap-3">
-            <button
-              aria-label="Précédent"
-              onClick={prev}
-              className="w-11 h-11 rounded-full border border-border hover:bg-primary hover:text-primary-foreground hover:border-primary grid place-items-center transition-smooth"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <div className="flex gap-2">
-              {items.map((_, k) => (
-                <button
-                  key={k}
-                  aria-label={`Aller au témoignage ${k + 1}`}
-                  onClick={() => setI(k)}
-                  className={`h-2 rounded-full transition-smooth ${k === i ? "bg-primary w-8" : "bg-border w-2"}`}
-                />
-              ))}
+          <div className="bg-background rounded-3xl border border-border/60 shadow-card p-8 lg:p-12">
+            <Quote className="w-10 h-10 text-primary/30" />
+            <blockquote className="mt-4 space-y-4 text-anthracite-soft leading-relaxed text-lg">
+              <p>« Je vous souhaite la bienvenue à PI — Prépas Internationales.</p>
+              <p>
+                A PI, nous avons mis un accent sur la qualité dans l'enseignement et autour des enseignements.
+                Nous avons un corps enseignant compétent et qualifié et le programme appliqué est celui de nos
+                écoles partenaires.
+              </p>
+              <p>
+                Nous proposons des certifications à nos étudiants telles que les certifications Microsoft ou ETS
+                afin de les rendre plus compétitifs sur le marché du travail…
+              </p>
+              <p className="text-sm">
+                <a
+                  href="https://web.facebook.com/juniorentreprisecameroun/?_rdc=1&_rdr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary font-semibold hover:underline"
+                >
+                  Lire la suite sur notre page Facebook →
+                </a>
+              </p>
+            </blockquote>
+            <div className="mt-8 pt-6 border-t border-border/60">
+              <div className="font-display font-bold text-anthracite">Jérôme CARAYON</div>
+              <div className="text-sm text-muted-foreground">Directeur Général de PI — Prépas Internationales</div>
             </div>
-            <button
-              aria-label="Suivant"
-              onClick={next}
-              className="w-11 h-11 rounded-full border border-border hover:bg-primary hover:text-primary-foreground hover:border-primary grid place-items-center transition-smooth"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { Quote } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import sighanoPortrait from "@/assets/sighano-portrait.jpg";
 
 const voices = [
   {
@@ -32,7 +33,7 @@ const voices = [
     id: "sighano",
     name: "Arnaud Sighano",
     role: "Président de la JECam",
-    image: "",
+    image: sighanoPortrait,
     quote:
       "Innovation, Flexibilité, Ambition : ce sont nos trois piliers pour bâtir une méthodologie efficiente au service des entreprises.",
   },

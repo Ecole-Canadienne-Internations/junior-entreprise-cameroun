@@ -1,37 +1,37 @@
 import { Calendar, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import eventNetworking from "@/assets/event-meeting.jpg";
-import eventWorkshop from "@/assets/event-workshop.jpg";
-import eventConference from "@/assets/event-conference.jpg";
+import eventMeeting from "@/assets/event-meeting.jpg";
+import eventTurquie from "@/assets/event-turquie-1.jpg";
+import eventSaintJean from "@/assets/event-saintjean.jpg";
 
 const events = [
   {
     cat: "Événement",
     color: "bg-primary/10 text-primary",
-    image: eventNetworking,
+    image: eventMeeting,
     title: "Junior-Enterprises Meeting",
     date: "Chaque 22 Novembre",
     place: "Yaoundé",
     desc: "Le rendez-vous annuel qui rassemble toutes les J.E affiliées du Cameroun.",
   },
   {
-    cat: "Partenariat",
+    cat: "International",
     color: "bg-anthracite/10 text-anthracite",
-    image: eventWorkshop,
-    title: "GEFI Network — Collaboration stratégique",
-    date: "En cours",
-    place: "International",
-    desc: "Une alliance pour ouvrir de nouvelles opportunités à nos consultants juniors.",
+    image: eventTurquie,
+    title: "Renforcement des relations Cameroun-Turquie",
+    date: "Récent",
+    place: "Yaoundé",
+    desc: "Visite officielle de l'Ambassadeur de Turquie à la Junior-Entreprise Cameroun, scellant une coopération renforcée entre les deux écosystèmes.",
   },
   {
-    cat: "International",
+    cat: "Actualité",
     color: "bg-primary/10 text-primary",
-    image: eventConference,
-    title: "Renforcement des relations Cameroun-Turquie",
-    date: "2026",
-    place: "Yaoundé — Istanbul",
-    desc: "Échanges, missions et coopération renforcée entre les deux écosystèmes étudiants.",
+    image: eventSaintJean,
+    title: "Installation du bureau MYSKILLS-IUSJC — Institut Saint Jean",
+    date: "Récent",
+    place: "Institut Saint Jean",
+    desc: "Suite aux élections du bureau de la Junior Entreprise MYSKILLS-IUSJC, l'Administrateur Général M. Arnaud Sighano a présidé le Conseil d'Administration et procédé à l'installation officielle du bureau retenu.",
   },
 ];
 
