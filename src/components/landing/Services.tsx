@@ -1,18 +1,21 @@
-import { BarChart3, Megaphone, Code2, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import serviceEtude from "@/assets/service-etude.jpg";
+import serviceMarketing from "@/assets/service-marketing.jpg";
+import serviceTech from "@/assets/service-tech.jpg";
 
 const services = [
   {
-    icon: BarChart3,
+    image: serviceEtude,
     title: "Études de Marché & Business Plan",
     desc: "Analyses sectorielles approfondies, études de faisabilité et business plans bancables pour vos projets d'investissement.",
   },
   {
-    icon: Megaphone,
+    image: serviceMarketing,
     title: "Stratégie Marketing & Digitale",
     desc: "Branding, content, SEO, social media et campagnes performantes — pensés pour le marché camerounais et africain.",
   },
   {
-    icon: Code2,
+    image: serviceTech,
     title: "Développement de Solutions Tech",
     desc: "Sites web, applications mobiles, plateformes SaaS et outils internes développés par nos meilleurs étudiants ingénieurs.",
   },
@@ -33,16 +36,22 @@ const Services = () => {
           {services.map((s) => (
             <article
               key={s.title}
-              className="group relative bg-background rounded-2xl p-8 border border-border/60 shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth overflow-hidden"
+              className="group relative bg-background rounded-2xl border border-border/60 shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth overflow-hidden flex flex-col"
             >
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-primary opacity-0 group-hover:opacity-100 transition-smooth" />
-              <div className="w-14 h-14 rounded-xl bg-primary/10 grid place-items-center text-primary group-hover:bg-gradient-primary group-hover:text-primary-foreground transition-smooth">
-                <s.icon className="w-7 h-7" />
+              <div className="aspect-[16/10] overflow-hidden">
+                <img
+                  src={s.image}
+                  alt={s.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
+                />
               </div>
-              <h3 className="mt-6 font-display text-xl font-bold text-anthracite">{s.title}</h3>
-              <p className="mt-3 text-anthracite-soft leading-relaxed">{s.desc}</p>
-              <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary">
-                En savoir plus <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-smooth" />
+              <div className="p-8 flex-1 flex flex-col">
+                <h3 className="font-display text-xl font-bold text-anthracite">{s.title}</h3>
+                <p className="mt-3 text-anthracite-soft leading-relaxed flex-1">{s.desc}</p>
+                <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary">
+                  En savoir plus <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-smooth" />
+                </div>
               </div>
             </article>
           ))}
