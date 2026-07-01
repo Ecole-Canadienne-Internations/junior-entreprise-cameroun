@@ -81,6 +81,9 @@ const Authorities = () => {
                   <div className="mt-6 pt-6 border-t border-border/60">
                     <div className="font-display font-bold text-anthracite">{v.name}</div>
                     <div className="text-sm text-muted-foreground">{v.role}</div>
+                    {v.source && (
+                      <div className="text-xs text-muted-foreground/80 mt-2 italic">Source : {v.source}</div>
+                    )}
                   </div>
                 </div>
               </div>
