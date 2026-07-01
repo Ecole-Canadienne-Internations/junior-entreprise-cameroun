@@ -8,6 +8,7 @@ import Services from "@/components/landing/Services";
 import Authorities from "@/components/landing/Authorities";
 import Timeline from "@/components/landing/Timeline";
 import Testimonials from "@/components/landing/Testimonials";
+import Organigramme from "@/components/landing/Organigramme";
 import LeadCapture from "@/components/landing/LeadCapture";
 import Events from "@/components/landing/Events";
 import Footer from "@/components/landing/Footer";
@@ -16,29 +17,7 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Junior Entreprise Cameroun — Consulting junior & entrepreneuriat étudiant";
-    const setMeta = (name: string, content: string) => {
-      let m = document.querySelector(`meta[name="${name}"]`);
-      if (!m) {
-        m = document.createElement("meta");
-        m.setAttribute("name", name);
-        document.head.appendChild(m);
-      }
-      m.setAttribute("content", content);
-    };
-    setMeta(
-      "description",
-      "Junior Entreprise Cameroun : études de marché, business plan, marketing digital et solutions tech par les meilleurs étudiants camerounais."
-    );
-    setMeta("keywords", "Entrepreneuriat étudiant Cameroun, Consulting junior Cameroun, Junior Entreprise");
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.setAttribute("rel", "canonical");
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute("href", window.location.origin + "/");
+    // Head metadata is set statically in index.html for SEO/crawlers.
   }, []);
 
   return (
@@ -53,6 +32,7 @@ const Index = () => {
       <Authorities />
       <Timeline />
       <Testimonials />
+      <Organigramme />
       <LeadCapture />
       <Events />
       <Footer />
