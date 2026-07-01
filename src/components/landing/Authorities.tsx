@@ -1,6 +1,6 @@
 import { Quote } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import sighanoPortrait from "@/assets/sighano-portrait.jpg";
+import fameNdongoPortrait from "@/assets/fame-ndongo.jpg";
 
 const voices = [
   {
@@ -10,32 +10,27 @@ const voices = [
     image:
       "https://www.stopblablacam.com/media/k2/items/cache/bf1e20a4462b71e3cc4cece2a8c96ac8_L.jpg",
     quote:
-      "Contribuer à l'émergence du Cameroun d'ici 2035 passe par les incubateurs universitaires et l'innovation portée par notre jeunesse.",
-  },
-  {
-    id: "basilekin",
-    name: "Achille Basilekin",
-    role: "Ministre des PME, Économie sociale & Artisanat",
-    image:
-      "https://www.stopblablacam.com/media/k2/items/cache/c424b460fe583041c7a0498c6f662aee_L.jpg",
-    quote:
-      "Le dynamisme de l'économie camerounaise passe par l'accompagnement structuré des PME, des artisans et des jeunes entrepreneurs.",
+      "Nous allons consolider cette option, articulée autour des savoirs pratiques et du numérique éducatif. Nous allons, notamment, procéder à la multiplication effective des incubateurs d'entreprise, au sein des institutions universitaires. L'objectif recherché est d'apprendre aux étudiants, toutes disciplines confondues, à créer et à gérer des entreprises. Plusieurs « Juniors–Entreprises » ont déjà été mises sur pied et fonctionnent, à la satisfaction de tous. Les étudiants se familiarisent, ainsi, avec leur mission socio-économique qui est de contribuer à l'émergence du Cameroun à l'horizon 2035.",
+    source: "Message lors de la Conférence des Recteurs des Universités Italiennes",
   },
   {
     id: "fame",
     name: "Pr. Jacques Fame Ndongo",
-    role: "Ministre de l'Enseignement Supérieur",
-    image: "https://www.ubuea.cm/wp-content/uploads/2024/04/MH-scaled.jpg",
+    role: "Ministre d'État, Ministre de l'Enseignement Supérieur",
+    image: fameNdongoPortrait,
     quote:
-      "Acquérir du savoir-faire au-delà des connaissances académiques : c'est tout l'esprit du système LMD et du modèle Junior-Entreprise.",
+      "Pendant longtemps, l'université a été focalisée sur l'acquisition des connaissances que nous appelons les savoirs-savants ; nous voulons un juste équilibre entre les savoirs-savants et les savoirs concrets, savoirs pratiques […] avec les incubateurs d'entreprise qui existent dans la plupart de nos universités d'État, avec les Juniors-Entreprises, avec l'accent mis sur l'acquisition des compétences parallèlement à l'appropriation des connaissances, tout cela fait qu'aujourd'hui l'étudiant camerounais, qui est aussi au cœur du système LMD, acquiert de plus en plus le savoir-faire par-delà le savoir.",
+    source: "Journal Radio, 13h de la CRTV — jeudi 13 Octobre 2016",
   },
   {
-    id: "sighano",
-    name: "Arnaud Sighano",
-    role: "Président de la JECam",
-    image: sighanoPortrait,
+    id: "basilekin",
+    name: "M. Achille Basilekin III",
+    role: "Ministre des PME, de l'Économie Sociale et de l'Artisanat",
+    image:
+      "https://www.stopblablacam.com/media/k2/items/cache/c424b460fe583041c7a0498c6f662aee_L.jpg",
     quote:
-      "Innovation, Flexibilité, Ambition : ce sont nos trois piliers pour bâtir une méthodologie efficiente au service des entreprises.",
+      "Pour redynamiser leurs économies et créer davantage d'emplois, de nombreux pays s'appuient sur les PME, les artisans et les acteurs de l'économie sociale. Le Cameroun n'est pas en reste dans cette dynamique émergente et à cet effet, plusieurs outils d'accompagnement ont été mis sur pied. Notre département ministériel a développé un ensemble d'outils et de mécanismes qu'il monitore et évalue périodiquement.",
+    source: "Édito du Ministre — minpmeesa.gov.cm",
   },
 ];
 
@@ -86,6 +81,9 @@ const Authorities = () => {
                   <div className="mt-6 pt-6 border-t border-border/60">
                     <div className="font-display font-bold text-anthracite">{v.name}</div>
                     <div className="text-sm text-muted-foreground">{v.role}</div>
+                    {v.source && (
+                      <div className="text-xs text-muted-foreground/80 mt-2 italic">Source : {v.source}</div>
+                    )}
                   </div>
                 </div>
               </div>
