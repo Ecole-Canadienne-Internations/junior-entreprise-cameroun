@@ -1,4 +1,5 @@
 import { Quote } from "lucide-react";
+import sighanoPortrait from "@/assets/sighano-portrait.jpg";
 
 const Testimonials = () => {
   return (
@@ -9,40 +10,62 @@ const Testimonials = () => {
       <div className="container mx-auto container-px relative">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <div className="text-sm font-semibold text-primary uppercase tracking-wider">Mot du Directeur</div>
+            <div className="text-sm font-semibold text-primary uppercase tracking-wider">Mot de l'Administrateur Général</div>
             <h2 className="mt-3 font-display text-3xl lg:text-4xl font-bold text-anthracite text-balance">
-              Le mot du Directeur Général de <span className="text-primary">PI — Prépas Internationales</span>.
+              Le mot de l'<span className="text-primary">Administrateur Général</span> de la Junior-Entreprises Cameroun.
             </h2>
           </div>
 
           <div className="bg-background rounded-3xl border border-border/60 shadow-card p-8 lg:p-12">
+            <div className="flex items-center gap-5 mb-6">
+              <img
+                src={sighanoPortrait}
+                alt="Arnaud Sighano"
+                loading="lazy"
+                className="w-20 h-20 rounded-full object-cover border-2 border-primary/20"
+              />
+              <div>
+                <div className="font-display font-bold text-anthracite text-lg">Arnaud Sighano</div>
+                <div className="text-sm text-muted-foreground">Administrateur Général de la Junior-Entreprises Cameroun</div>
+              </div>
+            </div>
+
             <Quote className="w-10 h-10 text-primary/30" />
-            <blockquote className="mt-4 space-y-4 text-anthracite-soft leading-relaxed text-lg">
-              <p>« Je vous souhaite la bienvenue à PI — Prépas Internationales.</p>
+            <blockquote className="mt-4 space-y-4 text-anthracite-soft leading-relaxed">
               <p>
-                A PI, nous avons mis un accent sur la qualité dans l'enseignement et autour des enseignements.
-                Nous avons un corps enseignant compétent et qualifié et le programme appliqué est celui de nos
-                écoles partenaires.
+                « Le développement de l'emploi, en particulier l'emploi des jeunes, est une priorité nationale,
+                inscrite au cœur des objectifs affichés dans le Document de Stratégie pour la Croissance et l'Emploi
+                et dans les orientations prioritaires de l'action publique prônées par le Chef de l'Etat (Plan
+                Triennal Spécial Jeune). Les institutions publiques et les entreprises privées, considérées dans
+                leur rôle d'employeurs, montrent souvent des insuffisances dans la maîtrise d'un management des
+                ressources humaines de nature à permettre des recrutements optimisés et un développement continu
+                des compétences.
               </p>
               <p>
-                Nous proposons des certifications à nos étudiants telles que les certifications Microsoft ou ETS
-                afin de les rendre plus compétitifs sur le marché du travail…
+                Incubateurs actifs dans la scène entrepreneuriale, les Juniors-Entreprises se montrent concisément
+                efficaces pour l'ensemble des réponses liées à l'emploi et à la satisfaction sur les projets des
+                clients. Développer le mouvement des Juniors-Entreprises années après année sur le territoire
+                national, parvenant au statut de maturité, nous JECam – Confédération des Juniors-Entreprises
+                Camerounaise – venons ambitieusement fédérer l'élite entrepreneuriale dans la perspective
+                d'insertion professionnelle et de concrétisation effective de la professionnalisation des
+                enseignements par l'unité des valeurs des Junior-Entreprises.
               </p>
-              <p className="text-sm">
+              <p>
+                <span className="font-semibold text-anthracite">Professionnalisme, Innovation, Flexibilité, Ambition et Ponctualité</span> :
+                telles sont nos principales bases et piliers d'une méthodologie efficiente pour continuer à étendre
+                le mouvement des JEs à l'échelle nationale et internationale. »
+              </p>
+              <p className="text-sm pt-2">
                 <a
                   href="https://web.facebook.com/juniorentreprisecameroun/?_rdc=1&_rdr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary font-semibold hover:underline"
                 >
-                  Lire la suite sur notre page Facebook →
+                  Suivre la JECam sur Facebook →
                 </a>
               </p>
             </blockquote>
-            <div className="mt-8 pt-6 border-t border-border/60">
-              <div className="font-display font-bold text-anthracite">Jérôme CARAYON</div>
-              <div className="text-sm text-muted-foreground">Directeur Général de PI — Prépas Internationales</div>
-            </div>
           </div>
         </div>
       </div>
