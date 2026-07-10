@@ -34,17 +34,7 @@ const milestones: Milestone[] = [
   {
     year: "2016",
     title: "Double reconnaissance ministérielle",
-    desc: "Reconnaissance par le Ministère de l'Enseignement Supérieur et inscription au répertoire des ONG et OSC tenu par le Ministère des Relations Extérieures.",
-    docs: [
-      {
-        label: "Document — MINESUP (Enseignement Supérieur)",
-        href: "/docs/reconnaissance-minesup-2016.jpg",
-      },
-      {
-        label: "Document — MINREX (Relations Extérieures)",
-        href: "/docs/reconnaissance-minrex-2016.jpg",
-      },
-    ],
+    desc: "Reconnaissance par le Ministère de l'Enseignement Supérieur (MINESUP) et inscription au répertoire des ONG et OSC du Ministère des Relations Extérieures (MINREX). Voir la section « Documents ministériels » ci-dessous.",
   },
   {
     year: "2018",
