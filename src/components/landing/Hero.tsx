@@ -41,7 +41,7 @@ const Hero = () => {
 
           <div className="mt-12 flex items-center gap-8 text-sm text-muted-foreground">
             <div>
-              <div className="font-display font-bold text-2xl text-anthracite">14</div>
+              <div className="font-display font-bold text-2xl text-anthracite">21</div>
               J.E affiliées
             </div>
             <div className="h-10 w-px bg-border" />
