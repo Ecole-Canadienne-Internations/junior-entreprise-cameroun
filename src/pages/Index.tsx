@@ -9,6 +9,8 @@ import Authorities from "@/components/landing/Authorities";
 import Timeline from "@/components/landing/Timeline";
 import Testimonials from "@/components/landing/Testimonials";
 import Organigramme from "@/components/landing/Organigramme";
+import Gallery from "@/components/landing/Gallery";
+import Flyers from "@/components/landing/Flyers";
 import LeadCapture from "@/components/landing/LeadCapture";
 import Events from "@/components/landing/Events";
 import Footer from "@/components/landing/Footer";
@@ -33,6 +35,8 @@ const Index = () => {
       <Timeline />
       <Testimonials />
       <Organigramme />
+      <Gallery />
+      <Flyers />
       <LeadCapture />
       <Events />
       <Footer />
