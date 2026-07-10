@@ -1,17 +1,23 @@
 import { Badge } from "@/components/ui/badge";
-import f1 from "@/assets/flyer-1.jpg.asset.json";
-import f2 from "@/assets/flyer-2.jpg.asset.json";
+import f1 from "@/assets/flyer-1.jpg";
+import f2 from "@/assets/flyer-2.jpg";
+import f3 from "@/assets/flyer-3.png";
 
 const flyers = [
   {
-    src: f1.url,
-    title: "Learn by Doing — Révélez votre talent",
-    caption: "Affiche d'exposition — campagne « Learn by Doing ». Édition archivée.",
+    src: f1,
+    title: "What We Do — Learning by Doing",
+    caption: "Affiche institutionnelle présentant nos domaines d'intervention : entrepreneuriat, coaching, audits & conseils, intégration professionnelle.",
   },
   {
-    src: f2.url,
-    title: "Révéler votre talent & faciliter votre insertion socioprofessionnelle",
-    caption: "Affiche d'exposition — séminaires, ateliers, placements & networking. Édition archivée.",
+    src: f2,
+    title: "Dirigeant Aujourd'hui, Dirigeant Demain !",
+    caption: "Campagne institutionnelle JECam — Junior Enterprises Global, GEFI, AGORAlliance, JE.",
+  },
+  {
+    src: f3,
+    title: "Envie d'expérience professionnelle ?",
+    caption: "Affiche de recrutement étudiant — rejoignez la Junior-Entreprise Cameroun.",
   },
 ];
 
@@ -29,10 +35,10 @@ const Flyers = () => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {flyers.map((f) => (
             <figure
-              key={f.src}
+              key={f.title}
               className="bg-background rounded-3xl border border-border/60 shadow-card overflow-hidden flex flex-col"
             >
               <div className="relative">
