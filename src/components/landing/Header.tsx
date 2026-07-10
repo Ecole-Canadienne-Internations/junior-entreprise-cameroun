@@ -6,6 +6,7 @@ import logo from "@/assets/logo-jecam.png";
 const links = [
   { href: "#services", label: "Nos Services" },
   { href: "#realisations", label: "Réalisations" },
+  { href: "#galerie", label: "Galerie" },
   { href: "#evenements", label: "Événements" },
   { href: "#contact", label: "Contact" },
 ];

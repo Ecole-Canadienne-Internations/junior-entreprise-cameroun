@@ -68,7 +68,7 @@ const Stats = () => {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 max-w-5xl mx-auto">
-          <Counter to={14} label="Junior-Entreprises affiliées" />
+          <Counter to={21} label="Junior-Entreprises affiliées" />
           <Counter to={150} suffix="+" label="Projets réalisés" />
           <Counter to={775} suffix="+" label="Étudiants consultants" />
           <Counter to={6} prefix="0" label="Congrès nationaux & internationaux" />
