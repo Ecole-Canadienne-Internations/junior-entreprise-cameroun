@@ -4,8 +4,18 @@ import { Badge } from "@/components/ui/badge";
 import eventMeeting from "@/assets/event-meeting.jpg";
 import eventTurquie from "@/assets/event-turquie-1.jpg";
 import eventSaintJean from "@/assets/event-saintjean.jpg";
+import eventSommet2027 from "@/assets/event-sommet-2027.png";
 
 const events = [
+  {
+    cat: "À venir",
+    color: "bg-primary/10 text-primary",
+    image: eventSommet2027,
+    title: "Sommet Junior-Entreprises & Croissance 2027",
+    date: "Année 2027",
+    place: "Cameroun",
+    desc: "Sommet dédié aux Start-up / TPE et à la croissance des Junior-Entreprises. Rendez-vous incontournable de l'écosystème entrepreneurial.",
+  },
   {
     cat: "Événement",
     color: "bg-primary/10 text-primary",
@@ -49,7 +59,7 @@ const Events = () => {
           <Button variant="outline" size="lg">Voir tous les événements</Button>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {events.map((e) => (
             <article
               key={e.title}

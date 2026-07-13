@@ -1,6 +1,7 @@
 import { FileText } from "lucide-react";
 import minesup from "@/assets/doc-minesup-2016.jpg";
 import minrex from "@/assets/doc-minrex-2016.jpg";
+import saintJeanSignature from "@/assets/doc-saintjean-signature.jpg";
 
 const docs = [
   {
@@ -58,6 +59,31 @@ const OfficialDocs = () => {
               </figcaption>
             </figure>
           ))}
+        </div>
+
+        <div className="max-w-3xl mx-auto mt-12">
+          <figure className="bg-background rounded-3xl border border-border/60 shadow-card overflow-hidden">
+            <a href={saintJeanSignature} target="_blank" rel="noopener noreferrer" className="block relative group">
+              <img
+                src={saintJeanSignature}
+                alt="Signature de partenariat avec l'Université Saint Jean"
+                loading="lazy"
+                className="w-full h-auto object-cover transition-smooth group-hover:scale-[1.02]"
+              />
+            </a>
+            <figcaption className="p-5 text-center">
+              <div className="inline-flex items-center gap-2 text-xs font-semibold text-primary uppercase tracking-wider">
+                <FileText className="w-4 h-4" />
+                Partenariat académique
+              </div>
+              <h3 className="mt-2 font-display font-bold text-anthracite">
+                Signature de partenariat — Université Saint Jean de Yaoundé
+              </h3>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                Cérémonie officielle de signature de convention entre la JECam et l'Université Saint Jean (Saint Jean Ingénieur), scellant la coopération académique et l'implantation d'une Junior-Entreprise au sein de l'institution.
+              </p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>

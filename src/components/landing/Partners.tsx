@@ -2,12 +2,15 @@ import instRepublic from "@/assets/partners/inst-republic.png";
 import instMinjec from "@/assets/partners/inst-minjec.png";
 import instMinpmeesa from "@/assets/partners/inst-minpmeesa.png";
 import instFeicom from "@/assets/partners/inst-feicom.png";
+import instMinesup from "@/assets/partners/inst-minesup.png";
 import schoolPrepavogt from "@/assets/partners/school-prepavogt.png";
 import schoolPrepasInter from "@/assets/partners/school-prepas-inter.png";
 import schoolIconic from "@/assets/partners/school-iconic.png";
 import schoolIsta from "@/assets/partners/school-ista.png";
+import schoolSaintJean from "@/assets/partners/school-saintjean.png";
 import startupAyila from "@/assets/partners/startup-ayila.jpg";
 import startupIyc from "@/assets/partners/startup-iyc.png";
+import startupTecnis from "@/assets/partners/startup-tecnis.png";
 import globalBdsu from "@/assets/partners/global-bdsu.png";
 import globalJcnetwork from "@/assets/partners/global-jcnetwork.png";
 import globalJetTunisia from "@/assets/partners/global-jet-tunisia.png";
@@ -16,22 +19,28 @@ import globalCjem from "@/assets/partners/global-cjem.jpg";
 import globalBrasil from "@/assets/partners/global-brasil.png";
 import globalJeUsa from "@/assets/partners/global-je-usa.jpg";
 import globalRaices from "@/assets/partners/global-raices.jpg";
+import intlJeGlobal from "@/assets/partners/intl-je-global.png";
+import intlGefi from "@/assets/partners/intl-gefi.png";
+import intlAgoralliance from "@/assets/partners/intl-agoralliance.png";
 
 const institutions = [
   { src: instRepublic, alt: "République du Cameroun" },
   { src: instMinjec, alt: "MINJEC" },
+  { src: instMinesup, alt: "MINESUP — Ministère de l'Enseignement Supérieur" },
   { src: instMinpmeesa, alt: "MINPMEESA" },
   { src: instFeicom, alt: "FEICOM" },
 ];
 const schools = [
   { src: schoolPrepavogt, alt: "Prépavogt" },
   { src: schoolPrepasInter, alt: "Prépas Internationales" },
-  { src: schoolIconic, alt: "Iconic Company" },
+  { src: schoolSaintJean, alt: "Université Saint Jean de Yaoundé" },
   { src: schoolIsta, alt: "ISTA" },
 ];
 const startups = [
   { src: startupAyila, alt: "Ayila'" },
   { src: startupIyc, alt: "International Youth Conference" },
+  { src: startupTecnis, alt: "TecNIS — Technologie Numérique pour l'Innovation et la Sécurité" },
+  { src: schoolIconic, alt: "Iconic Company" },
 ];
 const globalMembers = [
   { src: globalBdsu, alt: "BDSU — Allemagne" },
@@ -42,6 +51,11 @@ const globalMembers = [
   { src: globalBrasil, alt: "Brasil Júnior" },
   { src: globalJeUsa, alt: "Junior Enterprise USA" },
   { src: globalRaices, alt: "RAÍCES — Argentine" },
+];
+const intlPartners = [
+  { src: intlJeGlobal, alt: "Junior Enterprises Global" },
+  { src: intlGefi, alt: "GEFI — Groupement Économique Francophone et International" },
+  { src: intlAgoralliance, alt: "AGORAlliance" },
 ];
 
 const Logo = ({ src, alt, size = "md" }: { src: string; alt: string; size?: "sm" | "md" | "lg" }) => {
@@ -92,6 +106,7 @@ const Partners = () => {
           <Tier label="Écoles partenaires" items={schools} size="md" />
           <Tier label="Startups" items={startups} size="sm" />
           <Tier label="Junior Enterprise Global — Membres" items={globalMembers} size="md" />
+          <Tier label="Partenaires internationaux" items={intlPartners} size="lg" />
         </div>
       </div>
     </section>
