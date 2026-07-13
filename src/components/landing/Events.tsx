@@ -8,6 +8,15 @@ import eventSommet2027 from "@/assets/event-sommet-2027.png";
 
 const events = [
   {
+    cat: "À venir",
+    color: "bg-primary/10 text-primary",
+    image: eventSommet2027,
+    title: "Sommet Junior-Entreprises & Croissance 2027",
+    date: "Année 2027",
+    place: "Cameroun",
+    desc: "Sommet dédié aux Start-up / TPE et à la croissance des Junior-Entreprises. Rendez-vous incontournable de l'écosystème entrepreneurial.",
+  },
+  {
     cat: "Événement",
     color: "bg-primary/10 text-primary",
     image: eventMeeting,
