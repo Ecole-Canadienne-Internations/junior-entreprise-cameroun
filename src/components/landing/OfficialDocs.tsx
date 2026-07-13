@@ -1,6 +1,7 @@
 import { FileText } from "lucide-react";
 import minesup from "@/assets/doc-minesup-2016.jpg";
 import minrex from "@/assets/doc-minrex-2016.jpg";
+import saintJeanSignature from "@/assets/doc-saintjean-signature.jpg";
 
 const docs = [
   {
