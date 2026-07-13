@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import eventMeeting from "@/assets/event-meeting.jpg";
 import eventTurquie from "@/assets/event-turquie-1.jpg";
 import eventSaintJean from "@/assets/event-saintjean.jpg";
+import eventSommet2027 from "@/assets/event-sommet-2027.png";
 
 const events = [
   {
