@@ -106,6 +106,7 @@ const Partners = () => {
           <Tier label="Écoles partenaires" items={schools} size="md" />
           <Tier label="Startups" items={startups} size="sm" />
           <Tier label="Junior Enterprise Global — Membres" items={globalMembers} size="md" />
+          <Tier label="Partenaires internationaux" items={intlPartners} size="lg" />
         </div>
       </div>
     </section>
