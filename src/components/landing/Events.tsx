@@ -59,7 +59,7 @@ const Events = () => {
           <Button variant="outline" size="lg">Voir tous les événements</Button>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {events.map((e) => (
             <article
               key={e.title}
