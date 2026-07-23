@@ -8,6 +8,7 @@ import schoolPrepasInter from "@/assets/partners/school-prepas-inter.png";
 import schoolIconic from "@/assets/partners/school-iconic.png";
 import schoolIsta from "@/assets/partners/school-ista.png";
 import schoolSaintJean from "@/assets/partners/school-saintjean.png";
+import schoolEnit from "@/assets/partner-enit.png";
 import startupAyila from "@/assets/partners/startup-ayila.jpg";
 import startupIyc from "@/assets/partners/startup-iyc.png";
 import startupTecnis from "@/assets/partners/startup-tecnis.png";
