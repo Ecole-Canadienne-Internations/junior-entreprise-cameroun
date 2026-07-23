@@ -20,14 +20,19 @@ const Hero = () => {
 
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-background">
-      <div aria-hidden className="absolute inset-0">
-        {slides.map((src, i) => (
-          <div
-            key={i}
-            className="absolute inset-0 bg-no-repeat bg-cover bg-center transition-opacity duration-[1600ms] ease-in-out"
-            style={{ backgroundImage: `url(${src})`, opacity: i === active ? 0.9 : 0 }}
-          />
-        ))}
+      <div aria-hidden className="absolute inset-0 bg-background">
+        {slides.map((src, i) => {
+          const isDefault = i === 0;
+          return (
+            <div
+              key={i}
+              className={`absolute inset-0 bg-no-repeat bg-center transition-opacity duration-[1600ms] ease-in-out ${
+                isDefault ? "bg-cover" : "bg-contain"
+              }`}
+              style={{ backgroundImage: `url(${src})`, opacity: i === active ? 0.9 : 0 }}
+            />
+          );
+        })}
       </div>
       <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
 
