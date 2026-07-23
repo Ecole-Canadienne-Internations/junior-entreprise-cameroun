@@ -8,6 +8,7 @@ import schoolPrepasInter from "@/assets/partners/school-prepas-inter.png";
 import schoolIconic from "@/assets/partners/school-iconic.png";
 import schoolIsta from "@/assets/partners/school-ista.png";
 import schoolSaintJean from "@/assets/partners/school-saintjean.png";
+import schoolEnit from "@/assets/partner-enit.png";
 import startupAyila from "@/assets/partners/startup-ayila.jpg";
 import startupIyc from "@/assets/partners/startup-iyc.png";
 import startupTecnis from "@/assets/partners/startup-tecnis.png";
@@ -35,6 +36,7 @@ const schools = [
   { src: schoolPrepasInter, alt: "Prépas Internationales" },
   { src: schoolSaintJean, alt: "Université Saint Jean de Yaoundé" },
   { src: schoolIsta, alt: "ISTA" },
+  { src: schoolEnit, alt: "ENIT Junior Entreprise" },
 ];
 const startups = [
   { src: startupAyila, alt: "Ayila'" },

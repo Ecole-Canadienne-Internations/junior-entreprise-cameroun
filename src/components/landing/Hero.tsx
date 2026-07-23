@@ -1,15 +1,34 @@
 import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.png";
+import heroSlide1 from "@/assets/flyer-dirigeant-2024.png";
+import heroSlide2 from "@/assets/flyer-jecam-dirigeant.png";
+import heroSlide3 from "@/assets/news-enit-partenariat.jpg";
+
+const slides = [heroBg, heroSlide1, heroSlide2, heroSlide3];
 
 const Hero = () => {
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setActive((i) => (i + 1) % slides.length);
+    }, 5500);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-background">
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-90"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
+      <div aria-hidden className="absolute inset-0">
+        {slides.map((src, i) => (
+          <div
+            key={i}
+            className="absolute inset-0 bg-no-repeat bg-cover bg-center transition-opacity duration-[1600ms] ease-in-out"
+            style={{ backgroundImage: `url(${src})`, opacity: i === active ? 0.9 : 0 }}
+          />
+        ))}
+      </div>
       <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
 
       <div className="relative container mx-auto container-px">

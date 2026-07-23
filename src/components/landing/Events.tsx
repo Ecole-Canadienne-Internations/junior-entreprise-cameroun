@@ -5,8 +5,18 @@ import eventMeeting from "@/assets/event-meeting.jpg";
 import eventTurquie from "@/assets/event-turquie-1.jpg";
 import eventSaintJean from "@/assets/event-saintjean.jpg";
 import eventSommet2027 from "@/assets/event-sommet-2027.png";
+import newsEnit from "@/assets/news-enit-partenariat.jpg";
 
 const events = [
+  {
+    cat: "Actualité",
+    color: "bg-primary/10 text-primary",
+    image: newsEnit,
+    title: "Nouveau partenariat avec ENIT Junior Entreprise",
+    date: "Récent",
+    place: "Cameroun — Tunisie",
+    desc: "Partenariat stratégique avec ENIT Junior Entreprise pour mutualiser nos compétences et mieux accompagner vos projets informatiques. #Partenariat #Innovation #JECC #SolutionsInformatiques",
+  },
   {
     cat: "À venir",
     color: "bg-primary/10 text-primary",
