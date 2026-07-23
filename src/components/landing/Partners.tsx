@@ -36,7 +36,7 @@ const schools = [
   { src: schoolPrepasInter, alt: "Prépas Internationales" },
   { src: schoolSaintJean, alt: "Université Saint Jean de Yaoundé" },
   { src: schoolIsta, alt: "ISTA" },
-  { src: schoolEnit, alt: "ENIT Junior Entreprise" },
+  { src: schoolEnit, alt: "ENIT Junior Entreprise", size: "lg" as const },
 ];
 const startups = [
   { src: startupAyila, alt: "Ayila'" },
