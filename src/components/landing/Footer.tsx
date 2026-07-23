@@ -16,11 +16,17 @@ const Footer = () => {
               académique et le secteur privé pour l'émergence du Cameroun.
             </p>
             <div className="mt-6 flex gap-3">
-              {[Facebook, Linkedin, Twitter].map((Icon, i) => (
+              {[
+                { Icon: Facebook, href: "https://web.facebook.com/juniorentreprisecameroun", label: "Facebook" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/junior-entreprise-cameroun", label: "LinkedIn" },
+                { Icon: Twitter, href: "https://twitter.com/JECam12", label: "Twitter @JECam12" },
+              ].map(({ Icon, href, label }) => (
                 <a
-                  key={i}
-                  href="#"
-                  aria-label="Réseau social"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
                   className="w-10 h-10 rounded-full border border-primary-foreground/20 hover:bg-primary hover:border-primary grid place-items-center transition-smooth"
                 >
                   <Icon className="w-4 h-4" />
@@ -44,7 +50,7 @@ const Footer = () => {
             <ul className="space-y-3 text-primary-foreground/70 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                Carrefour Mvogt, Yaoundé (BP 5970)
+                Carrefour Bastos, rue face Moulin de France, Yaoundé
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary shrink-0" />
