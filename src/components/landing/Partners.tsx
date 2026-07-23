@@ -36,7 +36,7 @@ const schools = [
   { src: schoolPrepasInter, alt: "Prépas Internationales" },
   { src: schoolSaintJean, alt: "Université Saint Jean de Yaoundé" },
   { src: schoolIsta, alt: "ISTA" },
-  { src: schoolEnit, alt: "ENIT Junior Entreprise" },
+  { src: schoolEnit, alt: "ENIT Junior Entreprise", size: "lg" as const },
 ];
 const startups = [
   { src: startupAyila, alt: "Ayila'" },
@@ -74,14 +74,14 @@ const Logo = ({ src, alt, size = "md" }: { src: string; alt: string; size?: "sm"
   );
 };
 
-const Tier = ({ label, items, size }: { label: string; items: typeof institutions; size?: "sm" | "md" | "lg" }) => (
+const Tier = ({ label, items, size }: { label: string; items: { src: string; alt: string; size?: "sm" | "md" | "lg" }[]; size?: "sm" | "md" | "lg" }) => (
   <div className="flex flex-col items-center">
     <div className="text-[11px] font-semibold text-primary uppercase tracking-[0.2em] mb-6">
       {label}
     </div>
     <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 lg:gap-x-14">
       {items.map((p) => (
-        <Logo key={p.alt} {...p} size={size} />
+        <Logo key={p.alt} src={p.src} alt={p.alt} size={p.size ?? size} />
       ))}
     </div>
   </div>

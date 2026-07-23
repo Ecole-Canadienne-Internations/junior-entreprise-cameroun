@@ -5,7 +5,7 @@ import eventMeeting from "@/assets/event-meeting.jpg";
 import eventTurquie from "@/assets/event-turquie-1.jpg";
 import eventSaintJean from "@/assets/event-saintjean.jpg";
 import eventSommet2027 from "@/assets/event-sommet-2027.png";
-import newsEnit from "@/assets/news-enit-partenariat.jpg";
+import newsEnit from "@/assets/news-enit-partenariat.png";
 
 const events = [
   {
