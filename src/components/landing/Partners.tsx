@@ -47,6 +47,7 @@ const startups = [
 ];
 const globalMembers = [
   { src: globalBdsu, alt: "BDSU — Allemagne" },
+  { src: globalJeFrance, alt: "Junior-Entreprises France" },
   { src: globalJcnetwork, alt: "JCNetwork" },
   { src: globalJetTunisia, alt: "Junior Enterprises of Tunisia" },
   { src: globalCgje, alt: "Confédération Gabonaise des Junior Entreprises" },
