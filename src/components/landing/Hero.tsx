@@ -56,6 +56,13 @@ const Hero = () => {
             </Button>
           </div>
 
+          <p className="mt-8 max-w-xl text-center sm:text-left font-display text-lg lg:text-xl font-semibold text-anthracite/90 border-l-4 border-primary pl-4">
+            <span className="text-primary">Notre vision :</span> Bâtir le pont entre le monde
+            académique et le monde professionnel.
+          </p>
+
+
+
           <div className="mt-12 flex items-center gap-8 text-sm text-muted-foreground">
             <div>
               <div className="font-display font-bold text-2xl text-anthracite">21</div>
