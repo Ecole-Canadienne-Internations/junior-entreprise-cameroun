@@ -31,7 +31,8 @@ const Index = () => {
       <Partners />
       <About />
       <Stats />
-      <Process />
+        <Process />
+        <CreateJE />
       <Services />
       <Authorities />
       <Timeline />
