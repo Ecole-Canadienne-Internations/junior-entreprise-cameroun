@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { z } from "zod";
-import { Download, CheckCircle2 } from "lucide-react";
+import { Send, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -8,7 +8,7 @@ import { toast } from "@/hooks/use-toast";
 
 const schema = z.object({
   prenom: z.string().trim().min(1, "Prénom requis").max(60),
-  entreprise: z.string().trim().min(1, "Entreprise requise").max(120),
+  entreprise: z.string().trim().min(1, "Structure requise").max(120),
   secteur: z.string().trim().min(1, "Secteur requis").max(80),
   whatsapp: z
     .string()
@@ -35,7 +35,7 @@ const LeadCapture = () => {
     }
     setErrors({});
     setSubmitted(true);
-    toast({ title: "Merci !", description: "Votre catalogue arrive par WhatsApp." });
+    toast({ title: "Merci !", description: "Votre formulaire d'inscription a bien été transmis." });
   };
 
   return (
@@ -44,20 +44,20 @@ const LeadCapture = () => {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center bg-gradient-to-br from-secondary/60 to-background rounded-3xl p-8 lg:p-14 border border-border/60 shadow-card">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-xs uppercase tracking-wider">
-              <Download className="w-3.5 h-3.5" /> Lead Magnet
+              <Send className="w-3.5 h-3.5" /> Inscription
             </div>
             <h2 className="mt-5 font-display text-3xl lg:text-4xl font-bold text-anthracite text-balance">
-              Téléchargez notre <span className="text-primary">Catalogue de Compétences</span>.
+              Formulaire <span className="text-primary">d'inscription</span>.
             </h2>
             <p className="mt-4 text-anthracite-soft text-lg leading-relaxed">
-              Comment optimiser vos coûts opérationnels grâce à nos juniors experts —
-              guide pratique de 24 pages, gratuit.
+              Entreprise, université, étudiant ou startup : remplissez ce formulaire pour rejoindre
+              le réseau Junior-Entreprise Cameroun ou confier un projet à nos juniors experts.
             </p>
             <ul className="mt-6 space-y-3">
               {[
-                "Tarifs jusqu'à 60% moins chers que le consulting traditionnel",
-                "Méthodologie issue des meilleures écoles du Cameroun",
-                "Études de cas concrets et témoignages clients",
+                "Réponse de notre équipe sous 24h ouvrées.",
+                "Orientation vers la Junior-Entreprise la plus adaptée à votre besoin.",
+                "Accompagnement gratuit et sans engagement.",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-anthracite-soft">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -77,15 +77,15 @@ const LeadCapture = () => {
                 <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 grid place-items-center mb-4">
                   <CheckCircle2 className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-display text-xl font-bold text-anthracite">Demande reçue !</h3>
+                <h3 className="font-display text-xl font-bold text-anthracite">Inscription reçue !</h3>
                 <p className="mt-2 text-muted-foreground">
-                  Nous vous envoyons le catalogue sur WhatsApp dans quelques minutes.
+                  Notre équipe vous recontacte sur WhatsApp dans les meilleurs délais.
                 </p>
               </div>
             ) : (
               <>
                 <h3 className="font-display text-xl font-bold text-anthracite mb-5">
-                  Recevoir le catalogue
+                  Remplir le formulaire
                 </h3>
                 <div className="space-y-4">
                   <div>
@@ -94,7 +94,7 @@ const LeadCapture = () => {
                     {errors.prenom && <p className="text-xs text-destructive mt-1">{errors.prenom}</p>}
                   </div>
                   <div>
-                    <Label htmlFor="entreprise">Entreprise</Label>
+                    <Label htmlFor="entreprise">Structure / Établissement</Label>
                     <Input id="entreprise" name="entreprise" maxLength={120} placeholder="Ma société SARL" className="mt-1.5" />
                     {errors.entreprise && <p className="text-xs text-destructive mt-1">{errors.entreprise}</p>}
                   </div>
@@ -110,7 +110,7 @@ const LeadCapture = () => {
                   </div>
                 </div>
                 <Button type="submit" variant="hero" size="lg" className="w-full mt-6">
-                  <Download className="w-5 h-5" /> Télécharger le catalogue
+                  <Send className="w-5 h-5" /> Soumettre le formulaire d'inscription
                 </Button>
                 <p className="mt-3 text-xs text-muted-foreground text-center">
                   Vos données restent confidentielles. Aucun spam.
