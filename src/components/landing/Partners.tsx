@@ -20,6 +20,7 @@ import globalCjem from "@/assets/partners/global-cjem.jpg";
 import globalBrasil from "@/assets/partners/global-brasil.png";
 import globalJeUsa from "@/assets/partners/global-je-usa.jpg";
 import globalRaices from "@/assets/partners/global-raices.jpg";
+import globalJeFrance from "@/assets/partners/global-je-france.png";
 import intlJeGlobal from "@/assets/partners/intl-je-global.png";
 import intlGefi from "@/assets/partners/intl-gefi.png";
 import intlAgoralliance from "@/assets/partners/intl-agoralliance.png";
