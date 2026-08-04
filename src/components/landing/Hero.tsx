@@ -2,11 +2,9 @@ import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.png";
-import heroSlide1 from "@/assets/flyer-dirigeant-2024.png";
-import heroSlide2 from "@/assets/flyer-jecam-dirigeant.png";
 import heroSlide3 from "@/assets/news-enit-partenariat.jpg";
 
-const slides = [heroBg, heroSlide1, heroSlide2, heroSlide3];
+const slides = [heroBg, heroSlide3];
 
 const Hero = () => {
   const [active, setActive] = useState(0);
