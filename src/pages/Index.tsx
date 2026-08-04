@@ -4,6 +4,7 @@ import Partners from "@/components/landing/Partners";
 import About from "@/components/landing/About";
 import Stats from "@/components/landing/Stats";
 import Process from "@/components/landing/Process";
+import CreateJE from "@/components/landing/CreateJE";
 import Services from "@/components/landing/Services";
 import Authorities from "@/components/landing/Authorities";
 import Timeline from "@/components/landing/Timeline";
@@ -31,6 +32,7 @@ const Index = () => {
       <About />
       <Stats />
       <Process />
+      <CreateJE />
       <Services />
       <Authorities />
       <Timeline />

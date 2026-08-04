@@ -13,7 +13,7 @@ const Footer = () => {
             </div>
             <p className="mt-5 text-primary-foreground/70 max-w-md leading-relaxed">
               <span className="text-primary font-semibold">Notre vision :</span> Bâtir le pont entre le monde
-              académique et le secteur privé pour l'émergence du Cameroun.
+              académique et le monde professionnel.
             </p>
             <div className="mt-6 flex gap-3">
               {[
