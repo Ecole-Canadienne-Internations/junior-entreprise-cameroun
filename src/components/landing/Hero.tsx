@@ -3,8 +3,12 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.png";
 import heroSlide3 from "@/assets/news-enit-partenariat.jpg";
+import conf1 from "@/assets/hero-conference-1.jpg.asset.json";
+import conf2 from "@/assets/hero-conference-2.jpg.asset.json";
+import conf3 from "@/assets/hero-conference-3.jpg.asset.json";
 
-const slides = [heroBg, heroSlide3];
+const slides = [heroBg, heroSlide3, conf1.url, conf2.url, conf3.url];
+
 
 const Hero = () => {
   const [active, setActive] = useState(0);
