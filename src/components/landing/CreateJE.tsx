@@ -7,19 +7,20 @@ const paths = [
     icon: GraduationCap,
     title: "Je suis responsable d'université",
     desc: "Je souhaite créer une Junior-Entreprise pour mon campus et structurer l'employabilité de mes étudiants.",
-    to: "/creer-une-je#universite",
+    to: "/creer-une-je/universite",
   },
   {
     icon: Users,
     title: "Je suis étudiant",
     desc: "Je souhaite créer une Junior-Entreprise au sein de mon université et fédérer les talents autour de projets réels.",
-    to: "/creer-une-je#etudiant",
+    to: "/creer-une-je/etudiant",
   },
   {
     icon: Rocket,
     title: "Je suis une Startup",
     desc: "Je souhaite devenir Junior-Entreprise et rejoindre le réseau national pour gagner en crédibilité et en marchés.",
-    to: "/creer-une-je#startup",
+    to: "/creer-une-je/startup",
+
   },
 ];
 
