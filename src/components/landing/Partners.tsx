@@ -24,6 +24,7 @@ import globalJeFrance from "@/assets/partners/global-je-france.png";
 import intlJeGlobal from "@/assets/partners/intl-je-global.png";
 import intlGefi from "@/assets/partners/intl-gefi.png";
 import intlAgoralliance from "@/assets/partners/intl-agoralliance.png";
+import intlOicac from "@/assets/partners/intl-oicac.png.asset.json";
 
 const institutions = [
   { src: instRepublic, alt: "République du Cameroun" },
@@ -60,6 +61,7 @@ const intlPartners = [
   { src: intlJeGlobal, alt: "Junior Enterprises Global" },
   { src: intlGefi, alt: "GEFI — Groupement Économique Francophone et International" },
   { src: intlAgoralliance, alt: "AGORAlliance" },
+  { src: intlOicac.url, alt: "OICAC — Office international de la Conseillerie et de l'Accompagnement au Cameroun" },
 ];
 
 const Logo = ({ src, alt, size = "md" }: { src: string; alt: string; size?: "sm" | "md" | "lg" }) => {
