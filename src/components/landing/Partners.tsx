@@ -24,6 +24,7 @@ import globalJeFrance from "@/assets/partners/global-je-france.png";
 import intlJeGlobal from "@/assets/partners/intl-je-global.png";
 import intlGefi from "@/assets/partners/intl-gefi.png";
 import intlAgoralliance from "@/assets/partners/intl-agoralliance.png";
+import intlOicac from "@/assets/partners/intl-oicac.png.asset.json";
 
 const institutions = [
   { src: instRepublic, alt: "République du Cameroun" },
