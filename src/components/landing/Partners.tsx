@@ -61,6 +61,7 @@ const intlPartners = [
   { src: intlJeGlobal, alt: "Junior Enterprises Global" },
   { src: intlGefi, alt: "GEFI — Groupement Économique Francophone et International" },
   { src: intlAgoralliance, alt: "AGORAlliance" },
+  { src: intlOicac.url, alt: "OICAC — Office international de la Conseillerie et de l'Accompagnement au Cameroun" },
 ];
 
 const Logo = ({ src, alt, size = "md" }: { src: string; alt: string; size?: "sm" | "md" | "lg" }) => {
