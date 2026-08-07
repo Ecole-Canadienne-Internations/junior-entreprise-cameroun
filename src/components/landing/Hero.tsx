@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.png";
 import heroSlide3 from "@/assets/news-enit-partenariat.jpg";
-import conf1 from "@/assets/hero-conference-1.jpg.asset.json";
-import conf2 from "@/assets/hero-conference-2.jpg.asset.json";
-import conf3 from "@/assets/hero-conference-3.jpg.asset.json";
+import conf1 from "@/assets/hero-conference-1.jpg";
+import conf2 from "@/assets/hero-conference-2.jpg";
+import conf3 from "@/assets/hero-conference-3.jpg";
 
-const slides = [heroBg, heroSlide3, conf1.url, conf2.url, conf3.url];
+const slides = [heroBg, heroSlide3, conf1, conf2, conf3];
 
 
 const Hero = () => {
@@ -27,11 +27,11 @@ const Hero = () => {
           <div
             key={i}
             className="absolute inset-0 bg-no-repeat bg-cover bg-center transition-opacity duration-[2000ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
-            style={{ backgroundImage: `url(${src})`, opacity: i === active ? 0.9 : 0 }}
+            style={{ backgroundImage: `url(${src})`, opacity: i === active ? 1 : 0 }}
           />
         ))}
       </div>
-      <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
+      <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/55 to-background/10" />
 
       <div className="relative container mx-auto container-px">
         <div className="max-w-2xl animate-fade-up">
