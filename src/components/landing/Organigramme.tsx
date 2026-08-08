@@ -70,7 +70,7 @@ const Card = ({ n }: { n: Node }) => (
         <n.icon className="w-5 h-5" />
       </div>
       <div>
-        <div className="text-[11px] font-semibold text-primary uppercase tracking-[0.18em]">{n.tag}</div>
+        <div className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${n.tagClass ?? "text-primary"}`}>{n.tag}</div>
         <h3 className="mt-1 font-display text-lg font-bold text-anthracite">{n.title}</h3>
         <p className="mt-1 text-sm font-medium text-anthracite-soft">{n.lead}</p>
       </div>
