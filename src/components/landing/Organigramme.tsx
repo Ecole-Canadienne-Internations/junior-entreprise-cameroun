@@ -24,7 +24,8 @@ const levels = [
   },
   {
     icon: Settings2,
-    tag: "Exécution & Animation",
+    tag: "Bureaux Executifs Nationals",
+    tagClass: "text-red-600",
     title: "Direction Exécutive (DE)",
     lead: "Directeur Exécutif élu par le collège des Présidents et Responsables de J.E",
     points: [
