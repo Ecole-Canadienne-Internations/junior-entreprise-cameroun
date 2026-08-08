@@ -61,11 +61,11 @@ const intlPartners = [
   { src: intlJeGlobal, alt: "Junior Enterprises Global" },
   { src: intlGefi, alt: "GEFI — Groupement Économique Francophone et International" },
   { src: intlAgoralliance, alt: "AGORAlliance" },
-  { src: intlOicac, alt: "OICAC — Office international de la Conseillerie et de l'Accompagnement au Cameroun" },
+  { src: intlOicac, alt: "OICAC — Office international de la Conseillerie et de l'Accompagnement au Cameroun", size: "xl" as const },
 ];
 
-const Logo = ({ src, alt, size = "md" }: { src: string; alt: string; size?: "sm" | "md" | "lg" }) => {
-  const h = size === "lg" ? "h-24 lg:h-28" : size === "md" ? "h-20 lg:h-24" : "h-16 lg:h-20";
+const Logo = ({ src, alt, size = "md" }: { src: string; alt: string; size?: "sm" | "md" | "lg" | "xl" }) => {
+  const h = size === "xl" ? "h-32 lg:h-36" : size === "lg" ? "h-24 lg:h-28" : size === "md" ? "h-20 lg:h-24" : "h-16 lg:h-20";
   return (
     <div className="group flex items-center justify-center px-4 py-3">
       <img
@@ -78,7 +78,7 @@ const Logo = ({ src, alt, size = "md" }: { src: string; alt: string; size?: "sm"
   );
 };
 
-const Tier = ({ label, items, size }: { label: string; items: { src: string; alt: string; size?: "sm" | "md" | "lg" }[]; size?: "sm" | "md" | "lg" }) => (
+const Tier = ({ label, items, size }: { label: string; items: { src: string; alt: string; size?: "sm" | "md" | "lg" | "xl" }[]; size?: "sm" | "md" | "lg" | "xl" }) => (
   <div className="flex flex-col items-center">
     <div className="text-[11px] font-semibold text-primary uppercase tracking-[0.2em] mb-6">
       {label}
