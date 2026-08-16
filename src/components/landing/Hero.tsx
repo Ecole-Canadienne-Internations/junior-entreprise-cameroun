@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.png";
-import heroSlide3 from "@/assets/news-enit-partenariat.jpg";
+import heroSlide3 from "@/assets/hero-bg-news.webp";
 import conf1 from "@/assets/hero-conference-1.jpg";
 import conf2 from "@/assets/hero-conference-2.jpg";
 import conf3 from "@/assets/hero-conference-3.jpg";
@@ -21,7 +21,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-background">
+    <section className="relative pt-28 pb-16 lg:pt-32 lg:pb-20 overflow-hidden bg-background">
       <div aria-hidden className="absolute inset-0 bg-background">
         {slides.map((src, i) => (
           <div
